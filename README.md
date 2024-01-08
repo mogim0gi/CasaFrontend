@@ -8,11 +8,19 @@ Frontend backup of my Home Assistant installation
 
 **custom components:**
 clock-weather-card
+
 hourly-weather
+
 vertical-stack-in-card
+
 layout-card
+
 button-card
+
 frigate-hass-card
+
 tabbed-card
+
 mini-graph-card
+
 mod-card
