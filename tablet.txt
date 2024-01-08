@@ -1,0 +1,2401 @@
+title: Home
+views:
+  - title: tablet
+    path: tablet
+    subview: false
+    type: custom:horizontal-layout
+    layout:
+      width: 300
+      max_cols: 3
+      height: 300
+    theme: Gedas
+    badges: []
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                entity: light.svetaine
+                color_type: card
+                color: rgb(254, 111, 34)
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                name: Svetainė
+                styles:
+                  card:
+                    - height: 33px
+                    - width: null
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 20px
+                    - letter-spacing: 0.2em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                show_icon: false
+                double_tap_action:
+                  action: more-info
+                hold_action:
+                  action: more-info
+              - type: custom:button-card
+                entity: remote.telia_tv_2
+                color_type: card
+                color: rgb(254, 111, 34)
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                name: ' '
+                styles:
+                  card:
+                    - height: 33px
+                    - width: 70px
+                show_icon: true
+                double_tap_action:
+                  action: more-info
+                  entity: media_player.samsung_s90ca_77
+                hold_action:
+                  action: more-info
+                  entity: media_player.samsung_s90ca_77
+                tap_action:
+                  action: toggle
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                color_type: card
+                entity: light.zidinys
+                label: |
+                  [[[
+                    var b = states['light.zidinys'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Židinys
+                styles:
+                  card:
+                    - height: 75px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                double_tap_action:
+                  action: more-info
+                hold_action:
+                  action: more-info
+              - type: custom:button-card
+                color_type: card
+                entity: light.tv
+                label: |
+                  [[[
+                    var b = states['light.tv'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Sofa
+                styles:
+                  card:
+                    - height: 75px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                double_tap_action:
+                  action: more-info
+                hold_action:
+                  action: more-info
+              - type: custom:button-card
+                color_type: card
+                entity: light.sofa
+                label: |
+                  [[[
+                    var b = states['light.sofa'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Pianinas
+                styles:
+                  card:
+                    - height: 75px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                double_tap_action:
+                  action: more-info
+                hold_action:
+                  action: more-info
+              - type: custom:button-card
+                color_type: card
+                entity: light.svetaine_menas
+                label: |
+                  [[[
+                    var b = states['light.menas'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Menas
+                styles:
+                  card:
+                    - height: 75px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                double_tap_action:
+                  action: more-info
+                hold_action:
+                  action: more-info
+          - type: horizontal-stack
+            cards:
+              - type: horizontal-stack
+                cards:
+                  - type: custom:button-card
+                    entity: light.tasmota_5
+                    color_type: card
+                    color: rgb(254, 111, 34)
+                    state:
+                      - value: 'on'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(254, 111, 34)
+                      - value: 'off'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(28, 28, 28)
+                    name: ' '
+                    styles:
+                      card:
+                        - height: 33px
+                        - width: 80px
+                    show_icon: true
+                    hold_action:
+                      action: more-info
+                    double_tap_action:
+                      action: more-info
+                    tap_action:
+                      action: toggle
+                  - type: custom:button-card
+                    entity: light.kita
+                    color_type: card
+                    color: rgb(254, 111, 34)
+                    state:
+                      - value: 'on'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(254, 111, 34)
+                      - value: 'off'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(28, 28, 28)
+                    name: Kita
+                    styles:
+                      card:
+                        - height: 33px
+                        - width: null
+                      name:
+                        - text-transform: Uppercase
+                        - font-size: 20px
+                        - letter-spacing: 0.2em
+                        - font-family: Gill Sans
+                        - justify-self: center
+                        - padding: 0px 0px
+                    show_icon: false
+                    hold_action:
+                      action: more-info
+                    double_tap_action:
+                      action: more-info
+                  - type: custom:button-card
+                    entity: light.tasmota_3
+                    color_type: card
+                    color: rgb(254, 111, 34)
+                    state:
+                      - value: 'on'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(254, 111, 34)
+                      - value: 'off'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(28, 28, 28)
+                    name: ' '
+                    styles:
+                      card:
+                        - height: 33px
+                        - width: 80px
+                    show_icon: true
+                    hold_action:
+                      action: more-info
+                    double_tap_action:
+                      action: more-info
+                    tap_action:
+                      action: toggle
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                color_type: card
+                entity: light.holas
+                hold_action:
+                  action: more-info
+                  entity: sensor.0x00158d00090eabad_temperature
+                double_tap_action:
+                  action: more-info
+                label: |
+                  [[[
+                    var b = states['light.holas'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Holas
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                styles:
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-familly: cursive
+                    - justify-self: center
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 3px
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+              - type: custom:button-card
+                color_type: card
+                entity: light.tasmota_7
+                label: |
+                  [[[
+                    var c = states['sensor.0x00158d00090eabad_temperature'].state;
+                    return `<ha-icon
+                          icon="mdi:thermometer"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon><span>${parseFloat(c ? c  : '0')} °C</span>`
+                  ]]]     
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Holas 2
+                styles:
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+              - type: custom:button-card
+                color_type: card
+                entity: light.tasmota_8
+                label: |
+                  [[[
+                    var b = states['light.tasmota_8'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '100')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Koridorius
+                styles:
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+              - type: custom:button-card
+                color_type: card
+                entity: light.skalbykla
+                label: |
+                  [[[
+                    var b = states['light.skalbykla'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Skalbykla
+                styles:
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+      - type: vertical-stack
+        cards:
+          - type: custom:button-card
+            entity: light.virtuve_2
+            color_type: card
+            color: rgb(254, 111, 34)
+            state:
+              - value: 'on'
+                color: null
+                styles:
+                  card:
+                    - background-color: rgb(254, 111, 34)
+              - value: 'off'
+                color: null
+                styles:
+                  card:
+                    - background-color: rgb(28, 28, 28)
+            name: Virtuvė
+            styles:
+              card:
+                - height: 0px
+              name:
+                - text-transform: Uppercase
+                - font-size: 20px
+                - letter-spacing: 0.2em
+                - font-family: Gill Sans
+                - justify-self: center
+                - padding: 0px 0px
+            show_icon: false
+            double_tap_action:
+              action: more-info
+            hold_action:
+              action: more-info
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                color_type: card
+                entity: light.virtuve
+                label: |
+                  [[[
+                    var b = states['light.virtuve'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Sala
+                styles:
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+              - type: custom:button-card
+                color_type: card
+                entity: light.valgomasis
+                label: |
+                  [[[
+                    var b = states['light.valgomasis'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Stalas
+                styles:
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+              - type: custom:button-card
+                color_type: card
+                entity: light.sandeliukas
+                label: |
+                  [[[
+                    var b = states['light.sandeliukas'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Sandėlys
+                styles:
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+              - type: custom:button-card
+                color_type: card
+                entity: light.tasmota_6
+                hold_action:
+                  action: more-info
+                  entity: sensor.0x00158d00090eabad_temperature
+                double_tap_action:
+                  action: more-info
+                label: |
+                  [[[
+                    var b = states['light.tasmota_6'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '100')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Dekoras
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                styles:
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-familly: cursive
+                    - justify-self: center
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 3px
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+          - type: horizontal-stack
+            cards:
+              - type: custom:mini-graph-card
+                aspect_ratio: 1/1.2
+                color: rgb(28, 128, 199)
+                entities:
+                  - sensor.temperatura
+                font_size: 80
+                points_per_hour: 1.7
+                card_mod:
+                  style: |
+                    .name {
+                      font-size: 5px;
+                    }
+                    .header {
+                      padding-bottom: 0px;
+                    }
+                    .states {
+                      padding-bottom: 0px;
+                    }
+                    ha-card {
+                      height: 100px !important;
+                      padding-top: 4px !important;
+                    }                        
+                show:
+                  graph: bar
+                  icon: false
+                  name: null
+                  state: true
+              - type: custom:mini-graph-card
+                color_thresholds:
+                  - color: '#e0614c'
+                    value: 60
+                  - color: '#fe9c67'
+                    value: 50
+                  - color: '#abe673'
+                    value: 40
+                  - color: '#00a1ff'
+                    value: 0
+                entities:
+                  - sensor.dregme
+                font_size: 80
+                points_per_hour: 1.7
+                card_mod:
+                  style: |
+                    .name {
+                      font-size: 5px;
+                    }
+                    .header {
+                      padding-bottom: 0px;
+                    }
+                    .states {
+                      padding-bottom: 0px;
+                    }
+                    ha-card {
+                      height: 100px !important;
+                      padding-top: 4px !important;
+                    }                        
+                show:
+                  graph: bar
+                  icon: false
+                  name: null
+                  state: true
+              - type: custom:mini-graph-card
+                aspect_ratio: 1/1.2
+                color: rgb(255, 255, 0)
+                entities:
+                  - sensor.0x00158d000a83c0ba_temperature
+                font_size: 80
+                points_per_hour: 1.7
+                card_mod:
+                  style: |
+                    .name {
+                      font-size: 5px;
+                    }
+                    .header {
+                      padding-bottom: 0px;
+                    }
+                    .states {
+                      padding-bottom: 0px;
+                    }
+                    ha-card {
+                      height: 100px !important;
+                      padding-top: 4px !important;
+                    }                        
+                show:
+                  graph: bar
+                  icon: false
+                  name: null
+                  state: true
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                entity: light.iejimas
+                color_type: card
+                color: rgb(254, 111, 34)
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                name: Įėjimas
+                styles:
+                  card:
+                    - height: 65px
+                    - padding: 0px 0px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                show_icon: true
+                tap_action:
+                  action: toggle
+              - type: custom:button-card
+                entity: light.laukas
+                color_type: card
+                color: rgb(254, 111, 34)
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                name: Laukas
+                styles:
+                  card:
+                    - height: 65px
+                    - padding: 0px 0px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                show_icon: true
+                tap_action:
+                  action: toggle
+              - type: custom:button-card
+                entity: script.apsauginis_svetaine
+                color_type: card
+                color: rgb(254, 111, 34)
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                name: Kameros
+                styles:
+                  card:
+                    - height: 65px
+                    - padding: 0px 0px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                show_icon: true
+                double_tap_action:
+                  action: more-info
+                  entity: media_player.samsung_s90ca_77
+                hold_action:
+                  action: more-info
+                  entity: media_player.samsung_s90ca_77
+                tap_action:
+                  action: toggle
+      - type: vertical-stack
+        cards:
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                entity: remote.telia_tv
+                color_type: card
+                color: rgb(254, 111, 34)
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                name: ' '
+                styles:
+                  card:
+                    - height: 33px
+                    - width: 70px
+                show_icon: true
+                hold_action:
+                  action: more-info
+                  entity: media_player.lg_webos_tv_oled48c12la
+                double_tap_action:
+                  action: more-info
+                  entity: media_player.lg_webos_tv_oled48c12la
+                tap_action:
+                  action: toggle
+              - type: custom:button-card
+                entity: light.kambariai
+                color_type: card
+                color: rgb(254, 111, 34)
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                name: Kambariai
+                styles:
+                  card:
+                    - height: 33px
+                    - width: null
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 20px
+                    - letter-spacing: 0.2em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                show_icon: false
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                color_type: card
+                entity: light.0xa4c138d1aa8da687
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+                label: |
+                  [[[
+                    var b = states['light.0xa4c138d1aa8da687'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Miegamasis
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                custom_fields:
+                  notification: |
+                    [[[
+                      var c = states['sensor.0x00158d00090e5d64_temperature'].state;
+                      return `<ha-icon
+                            icon="mdi:thermometer"
+                            style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                            </ha-icon><span>${parseFloat(c ? c  : '0')} °C</span>`
+                    ]]]        
+                styles:
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-familly: cursive
+                    - justify-self: center
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: left
+                    - padding: 0px 3px
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+                  grid:
+                    - position: relative
+                  custom_fields:
+                    notification:
+                      - border-radius: 50%
+                      - color: rgb(28, 28, 28)
+                      - position: absolute
+                      - left: 32%
+                      - top: 64%
+                      - height: 40px
+                      - width: 70px
+                      - font-size: 9px
+                      - line-height: 40px
+              - type: custom:button-card
+                color_type: card
+                entity: light.koldunas
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+                label: |
+                  [[[
+                    var b = states['light.koldunas'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Jonas
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                custom_fields:
+                  notification: |
+                    [[[
+                      var c = states['sensor.0x00158d00090e5d64_temperature'].state;
+                      return `<ha-icon
+                            icon="mdi:thermometer"
+                            style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                            </ha-icon><span>${parseFloat(c ? c  : '0')} °C</span>`
+                    ]]]        
+                styles:
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-familly: cursive
+                    - justify-self: center
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: left
+                    - padding: 0px 3px
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+                  grid:
+                    - position: relative
+                  custom_fields:
+                    notification:
+                      - border-radius: 50%
+                      - color: rgb(28, 28, 28)
+                      - position: absolute
+                      - left: 32%
+                      - top: 64%
+                      - height: 40px
+                      - width: 70px
+                      - font-size: 9px
+                      - line-height: 40px
+              - type: custom:button-card
+                color_type: card
+                entity: light.sveciai
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+                label: |
+                  [[[
+                    var b = states['light.sveciai'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Svečiai
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                custom_fields:
+                  notification: |
+                    [[[
+                      var c = states['sensor.0x00158d00090eac1e_temperature'].state;
+                      return `<ha-icon
+                            icon="mdi:thermometer"
+                            style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                            </ha-icon><span>${parseFloat(c ? c  : '0')} °C</span>`
+                    ]]]        
+                styles:
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-familly: cursive
+                    - justify-self: center
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: left
+                    - padding: 0px 3px
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+                  grid:
+                    - position: relative
+                  custom_fields:
+                    notification:
+                      - border-radius: 50%
+                      - color: rgb(28, 28, 28)
+                      - position: absolute
+                      - left: 32%
+                      - top: 64%
+                      - height: 40px
+                      - width: 70px
+                      - font-size: 9px
+                      - line-height: 40px
+              - type: custom:button-card
+                color_type: card
+                entity: light.tasmota_10
+                label: |
+                  [[[
+                    var c = states['sensor.0x00158d00090eabca_temperature'].state;
+                    return `<ha-icon
+                          icon="mdi:thermometer"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon><span>${parseFloat(c ? c  : '0')} °C</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Ofisas
+                styles:
+                  card:
+                    - height: 75px
+                    - padding: 0px 0px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                entity: light.vonia11
+                color_type: card
+                color: rgb(254, 111, 34)
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                name: Vonia 1
+                styles:
+                  card:
+                    - height: 33px
+                    - width: null
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 20px
+                    - letter-spacing: 0.2em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                show_icon: false
+              - type: custom:button-card
+                entity: light.vonia_22
+                color_type: card
+                color: rgb(254, 111, 34)
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                name: Vonia 2
+                styles:
+                  card:
+                    - height: 33px
+                    - width: null
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 20px
+                    - letter-spacing: 0.2em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                show_icon: false
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                color_type: card
+                entity: light.pirmavonia
+                label: |
+                  [[[
+                    var b = states['light.pirmavonia'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Lubos
+                styles:
+                  card:
+                    - height: 75px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+              - type: custom:button-card
+                color_type: card
+                entity: light.vonia1led
+                label: |
+                  [[[
+                    var b = states['light.vonia1led'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Dušas
+                styles:
+                  card:
+                    - height: 75px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+              - type: custom:button-card
+                color_type: card
+                entity: light.vonia2lubos
+                label: |
+                  [[[
+                    var b = states['light.vonia2lubos'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: Gegnės
+                styles:
+                  card:
+                    - height: 75px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+              - type: custom:button-card
+                color_type: card
+                entity: light.vonia2dusas
+                label: |
+                  [[[
+                    var b = states['light.vonia2dusas'].attributes.brightness;
+                    return `<ha-icon
+                          icon="mdi:brightness-6"
+                          style="width: 12px; height: 12px; color: rgb(28, 28, 28);">
+                          </ha-icon> <span>${parseInt(b ? b/2.55 : '0')}%</span>`
+                  ]]]
+                show_label: true
+                show_state: false
+                size: 100%
+                name: AKCENTAI
+                styles:
+                  card:
+                    - height: 75px
+                  label:
+                    - color: rgb(28, 28, 28)
+                    - font-size: 9px
+                    - justify-self: center
+                    - padding: 0px 5px
+                  name:
+                    - text-transform: Uppercase
+                    - font-size: 12px
+                    - letter-spacing: 0.15em
+                    - font-family: Gill Sans
+                    - justify-self: center
+                    - padding: 0px 0px
+                state:
+                  - value: 'on'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(254, 111, 34)
+                  - value: 'off'
+                    color: null
+                    styles:
+                      card:
+                        - background-color: rgb(28, 28, 28)
+                hold_action:
+                  action: more-info
+                double_tap_action:
+                  action: more-info
+      - type: vertical-stack
+        cards:
+          - type: history-graph
+            entities:
+              - entity: switch.1a_kolektorius
+              - entity: switch.1a_kolektorius2
+              - entity: switch.1a_kolektorius3
+              - entity: switch.1a_kolektorius4
+              - entity: switch.2a_kolektoriai
+              - entity: switch.2a_kolektoriai_tasmota2
+              - entity: switch.2a_kolektoriai_tasmota3
+              - entity: switch.2a_kolektoriai_tasmota4
+                name: Sveciai
+            logarithmic_scale: false
+            hours_to_show: 48
+          - type: vertical-stack
+            cards:
+              - type: horizontal-stack
+                cards:
+                  - type: custom:button-card
+                    entity: input_boolean.normal
+                    triggers_update:
+                      - sensor.komfovent_mode_num
+                      - input_boolean.away
+                      - input_boolean.normal
+                      - input_boolean.intensive
+                      - input_boolean.boost
+                      - input_boolean.kitchen
+                      - input_boolean.fireplace
+                    color: grey
+                    tap_action:
+                      action: call-service
+                      service: modbus.write_register
+                      service_data:
+                        address: 4
+                        hub: Komfovent
+                        unit: 1
+                        value: 2
+                    hold_action:
+                      action: none
+                    name: Normal
+                    show_name: true
+                    icon: mdi:home-account
+                    color_type: card
+                    state:
+                      - value: 'on'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(254, 111, 34)
+                      - value: 'off'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(28, 28, 28)
+                  - type: custom:button-card
+                    entity: input_boolean.intensive
+                    color: grey
+                    tap_action:
+                      action: call-service
+                      service: modbus.write_register
+                      service_data:
+                        address: 4
+                        hub: Komfovent
+                        unit: 1
+                        value: 3
+                    hold_action:
+                      action: none
+                    name: Intensive
+                    show_name: true
+                    icon: mdi:weather-windy
+                    color_type: card
+                    state:
+                      - value: 'on'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(254, 111, 34)
+                      - value: 'off'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(28, 28, 28)
+                  - type: custom:button-card
+                    entity: input_boolean.boost
+                    color: grey
+                    tap_action:
+                      action: call-service
+                      service: modbus.write_register
+                      service_data:
+                        address: 4
+                        hub: Komfovent
+                        unit: 1
+                        value: 4
+                    hold_action:
+                      action: none
+                    name: Boost
+                    show_name: true
+                    icon: mdi:fan
+                    color_type: card
+                    state:
+                      - value: 'on'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(254, 111, 34)
+                      - value: 'off'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(28, 28, 28)
+                  - type: custom:button-card
+                    entity: switch.komfovent_switch_auto
+                    color: grey
+                    hold_action:
+                      action: none
+                    name: Auto
+                    show_name: true
+                    icon: mdi:autorenew
+                    color_type: card
+                    state:
+                      - value: 'on'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(254, 111, 34)
+                      - value: 'off'
+                        color: null
+                        styles:
+                          card:
+                            - background-color: rgb(28, 28, 28)
+      - type: vertical-stack
+        cards:
+          - type: custom:frigate-card
+            cameras:
+              - camera_entity: camera.front_right
+                live_provider: go2rtc
+                go2rtc:
+                  stream: front_right_sub
+              - camera_entity: camera.front_left
+                live_provider: go2rtc
+                go2rtc:
+                  stream: front_left_sub
+              - camera_entity: camera.rear_left
+                live_provider: go2rtc
+                go2rtc:
+                  stream: rear_left_sub
+              - camera_entity: camera.rear_right
+                live_provider: go2rtc
+                go2rtc:
+                  stream: rear_right_sub
+                frigate:
+                  camera_name: rear_right
+            performance:
+              profile: low
+              features:
+                animated_progress_indicator: true
+                media_chunk_size: 324
+            live:
+              preload: false
+              auto_play: selected
+              show_image_during_load: true
+              controls:
+                builtin: true
+                next_previous:
+                  size: 30
+                  style: none
+                thumbnails: {}
+                title:
+                  mode: none
+              draggable: true
+              transition_effect: slide
+              lazy_load: false
+              lazy_unload: all
+              auto_pause: never
+              layout:
+                fit: fill
+            menu:
+              buttons:
+                substreams:
+                  enabled: false
+                cameras:
+                  alignment: opposing
+                  enabled: false
+                snapshots:
+                  enabled: false
+                fullscreen:
+                  enabled: true
+                  alignment: opposing
+                frigate:
+                  enabled: true
+                  icon: mdi:cctv
+                live:
+                  enabled: false
+                clips:
+                  enabled: true
+                camera_ui:
+                  enabled: false
+                  alignment: matching
+                expand:
+                  enabled: false
+                  alignment: opposing
+                  priority: 50
+                media_player:
+                  enabled: true
+              alignment: right
+              style: hover-card
+            view:
+              default: live
+              dark_mode: 'on'
+              timeout_seconds: 10
+              update_seconds: 0
+            dimensions:
+              aspect_ratio_mode: static
+              aspect_ratio: '16:9'
+          - type: custom:vertical-stack-in-card
+            cards:
+              - type: custom:clock-weather-card
+                entity: weather.openweathermap
+                hide_today_section: false
+                hide_forecast_section: true
+                hide_clock: false
+                hide_date: false
+                temperature_sensor: sensor.0x00158d000a83c0ba_temperature
+                date_pattern: ccc, d.MM.yy
+                hourly_forecast: true
+                card_mod:
+                  style: |
+                    .card-content {
+                      padding-bottom: 0px !important;
+                      padding-top: 0px !important;
+                      margin-top: -10px;
+                    }
+              - type: custom:hourly-weather
+                forecast_type: hourly
+                num_segments: '18'
+                entity: weather.openweathermap
+                icons: true
+                hide_hours: false
+                show_wind: 'false'
+                show_date: boundary
+                show_precipitation_amounts: false
+                name: ' '
+                label_spacing: '3'
+      - type: vertical-stack
+        cards:
+          - type: vertical-stack
+            cards:
+              - type: custom:mod-card
+                card_mod:
+                  style:
+                    tabbed-card $: |
+                      mwc-tab {
+                        background: var(--ha-card-background, var(--card-background-color, white) );
+                        border-color: var(--ha-card-border-color, var(--divider-color, #e0e0e0) );
+                        border-width: 1px;
+                        border-top-left-radius: 12px;
+                        border-top-right-radius: 12px;
+                        border-style: solid;
+                        overflow: hidden;
+                      }
+                      section article > * {
+                        --ha-card-border-radius: 0px 0px 12px 12px;
+                      }
+                card:
+                  type: custom:tabbed-card
+                  options: {}
+                  styles:
+                    '--mdc-theme-primary': rgb(254, 111, 34)
+                    '--mdc-tab-text-label-color-default': orange
+                  tabs:
+                    - card:
+                        type: custom:mod-card
+                        card_mod:
+                          style:
+                            tabbed-card $: |
+                              mwc-tab {
+                                background: var(--ha-card-background, var(--card-background-color, white) );
+                                border-color: var(--ha-card-border-color, var(--divider-color, #e0e0e0) );
+                                border-width: 1px;
+                                border-top-left-radius: 0px;
+                                border-top-right-radius: 0px;
+                                border-style: solid;
+                                overflow: hidden;
+                              }
+                              section article > * {
+                                --ha-card-border-radius: 0px 0px 12px 12px;
+                              }
+                        card:
+                          type: custom:tabbed-card
+                          options: {}
+                          styles:
+                            '--mdc-theme-primary': rgb(254, 111, 34)
+                            '--mdc-tab-text-label-color-default': orange
+                          tabs:
+                            - card:
+                                type: custom:vertical-stack-in-card
+                                cards:
+                                  - type: thermostat
+                                    entity: climate.svetaine_termostat
+                                    show_current_as_primary: true
+                                    name: ' '
+                                    title: Svetaine
+                                  - type: horizontal-stack
+                                    cards:
+                                      - type: custom:mini-graph-card
+                                        aspect_ratio: 1/1.2
+                                        entities:
+                                          - sensor.0x00158d00090e5e01_temperature
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                                        color_thresholds:
+                                          - color: '#9a9a9a'
+                                            value: 0
+                                      - type: custom:mini-graph-card
+                                        color_thresholds:
+                                          - color: '#312c28'
+                                            value: 0
+                                        entities:
+                                          - sensor.0x00158d00090e5e01_humidity
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                              attributes:
+                                icon: mdi:family-tree
+                            - card:
+                                type: custom:vertical-stack-in-card
+                                cards:
+                                  - type: thermostat
+                                    entity: climate.virtue_termostat
+                                    show_current_as_primary: true
+                                    name: ' '
+                                    title: Virtuve
+                                  - type: horizontal-stack
+                                    cards:
+                                      - type: custom:mini-graph-card
+                                        aspect_ratio: 1/1.2
+                                        color: rgb(28, 128, 199)
+                                        entities:
+                                          - sensor.0x00158d00090e5d85_temperature
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                                      - type: custom:mini-graph-card
+                                        color_thresholds:
+                                          - color: '#e0614c'
+                                            value: 60
+                                          - color: '#fe9c67'
+                                            value: 50
+                                          - color: '#abe673'
+                                            value: 40
+                                          - color: '#00a1ff'
+                                            value: 0
+                                        entities:
+                                          - sensor.0x00158d00090e5d85_humidity
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                              attributes:
+                                icon: mdi:silverware-fork-knife
+                            - card:
+                                type: custom:vertical-stack-in-card
+                                cards:
+                                  - type: thermostat
+                                    entity: climate.holas_termostat
+                                    show_current_as_primary: true
+                                    name: ' '
+                                    title: Holas
+                                  - type: horizontal-stack
+                                    cards:
+                                      - type: custom:mini-graph-card
+                                        aspect_ratio: 1/1.2
+                                        color: rgb(28, 128, 199)
+                                        entities:
+                                          - sensor.0x00158d00090eabad_temperature
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                                      - type: custom:mini-graph-card
+                                        color_thresholds:
+                                          - color: '#e0614c'
+                                            value: 60
+                                          - color: '#fe9c67'
+                                            value: 50
+                                          - color: '#abe673'
+                                            value: 40
+                                          - color: '#00a1ff'
+                                            value: 0
+                                        entities:
+                                          - sensor.0x00158d00090eabad_humidity
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                              attributes:
+                                icon: mdi:exit-run
+                            - card:
+                                type: custom:vertical-stack-in-card
+                                cards:
+                                  - type: thermostat
+                                    entity: climate.office_termostat
+                                    show_current_as_primary: true
+                                    name: ' '
+                                    title: Ofisas
+                                  - type: horizontal-stack
+                                    cards:
+                                      - type: custom:mini-graph-card
+                                        aspect_ratio: 1/1.2
+                                        color: rgb(28, 128, 199)
+                                        entities:
+                                          - sensor.0x00158d00090eabca_temperature
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                                      - type: custom:mini-graph-card
+                                        color_thresholds:
+                                          - color: '#e0614c'
+                                            value: 60
+                                          - color: '#fe9c67'
+                                            value: 50
+                                          - color: '#abe673'
+                                            value: 40
+                                          - color: '#00a1ff'
+                                            value: 0
+                                        entities:
+                                          - sensor.0x00158d00090eabca_humidity
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                              attributes:
+                                icon: mdi:chair-rolling
+                      attributes:
+                        icon: mdi:home-floor-1
+                    - card:
+                        type: custom:mod-card
+                        card_mod:
+                          style:
+                            tabbed-card $: |
+                              mwc-tab {
+                                background: var(--ha-card-background, var(--card-background-color, white) );
+                                border-color: var(--ha-card-border-color, var(--divider-color, #e0e0e0) );
+                                border-width: 1px;
+                                border-top-left-radius: 12px;
+                                border-top-right-radius: 12px;
+                                border-style: solid;
+                                overflow: hidden;
+                              }
+                              section article > * {
+                                --ha-card-border-radius: 0px 0px 12px 12px;
+                              }
+                        card:
+                          type: custom:tabbed-card
+                          options: {}
+                          styles:
+                            '--mdc-theme-primary': rgb(254, 111, 34)
+                            '--mdc-tab-text-label-color-default': orange
+                          tabs:
+                            - card:
+                                type: custom:vertical-stack-in-card
+                                cards:
+                                  - type: thermostat
+                                    entity: climate.miegamasis_termostat
+                                    show_current_as_primary: true
+                                    name: ' '
+                                  - type: horizontal-stack
+                                    cards:
+                                      - type: custom:mini-graph-card
+                                        aspect_ratio: 1/1.2
+                                        color: rgb(28, 128, 199)
+                                        entities:
+                                          - sensor.0x00158d00090e5dc5_temperature
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                                      - type: custom:mini-graph-card
+                                        color_thresholds:
+                                          - color: '#e0614c'
+                                            value: 60
+                                          - color: '#fe9c67'
+                                            value: 50
+                                          - color: '#abe673'
+                                            value: 40
+                                          - color: '#00a1ff'
+                                            value: 0
+                                        entities:
+                                          - sensor.0x00158d00090e5dc5_humidity
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                              attributes:
+                                icon: mdi:bed
+                            - card:
+                                type: custom:vertical-stack-in-card
+                                cards:
+                                  - type: thermostat
+                                    entity: climate.vonia_2_termostat
+                                    show_current_as_primary: true
+                                  - type: horizontal-stack
+                                    cards:
+                                      - type: custom:mini-graph-card
+                                        aspect_ratio: 1/1.2
+                                        color: rgb(28, 128, 199)
+                                        entities:
+                                          - sensor.0x00158d00090e5d01_temperature
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                                      - type: custom:mini-graph-card
+                                        color_thresholds:
+                                          - color: '#e0614c'
+                                            value: 60
+                                          - color: '#fe9c67'
+                                            value: 50
+                                          - color: '#abe673'
+                                            value: 40
+                                          - color: '#00a1ff'
+                                            value: 0
+                                        entities:
+                                          - sensor.0x00158d00090e5d01_humidity
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                              attributes:
+                                icon: mdi:bathtub
+                            - card:
+                                type: custom:vertical-stack-in-card
+                                cards:
+                                  - type: thermostat
+                                    entity: climate.sveciai_termostat
+                                    show_current_as_primary: true
+                                    name: ' '
+                                  - type: horizontal-stack
+                                    cards:
+                                      - type: custom:mini-graph-card
+                                        aspect_ratio: 1/1.2
+                                        color: rgb(28, 128, 199)
+                                        entities:
+                                          - sensor.0x00158d00090eac1e_temperature
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                                      - type: custom:mini-graph-card
+                                        color_thresholds:
+                                          - color: '#e0614c'
+                                            value: 60
+                                          - color: '#fe9c67'
+                                            value: 50
+                                          - color: '#abe673'
+                                            value: 40
+                                          - color: '#00a1ff'
+                                            value: 0
+                                        entities:
+                                          - sensor.0x00158d00090eac1e_humidity
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                              attributes:
+                                icon: mdi:account-multiple-plus
+                            - card:
+                                type: custom:vertical-stack-in-card
+                                cards:
+                                  - type: thermostat
+                                    entity: climate.jonas_termostat
+                                    show_current_as_primary: true
+                                    name: ' '
+                                  - type: horizontal-stack
+                                    cards:
+                                      - type: custom:mini-graph-card
+                                        aspect_ratio: 1/1.2
+                                        color: rgb(28, 128, 199)
+                                        entities:
+                                          - sensor.0x00158d00090e5d64_temperature
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                                      - type: custom:mini-graph-card
+                                        color_thresholds:
+                                          - color: '#e0614c'
+                                            value: 60
+                                          - color: '#fe9c67'
+                                            value: 50
+                                          - color: '#abe673'
+                                            value: 40
+                                          - color: '#00a1ff'
+                                            value: 0
+                                        entities:
+                                          - sensor.0x00158d00090e5d64_humidity
+                                        font_size: 100
+                                        points_per_hour: 1.7
+                                        card_mod:
+                                          style: |
+                                            .name {
+                                              font-size: 10px;
+                                            }
+                                            .header {
+                                              padding-bottom: 0px;
+                                            }
+                                            .states {
+                                              padding-bottom: 0px;
+                                            }
+                                            ha-card {
+                                              height: 100px !important;
+                                              padding-top: 4px !important;
+                                            }                        
+                                        show:
+                                          graph: bar
+                                          icon: false
+                                          name: null
+                                          state: true
+                              attributes:
+                                icon: mdi:cradle
+                      attributes:
+                        icon: mdi:home-floor-2
+
